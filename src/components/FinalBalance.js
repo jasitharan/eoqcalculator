@@ -8,8 +8,8 @@ export const FinalBalance = () => {
   // const units = transactions.map(transaction => transaction.units);
   // const quantity = units
   //   .reduce((acc, item) => (acc += item), 0);
-  const wacunits = transactions.map(transaction => transaction.wacunits);
-  const quantity = wacunits.length === 0 ? 0:wacunits[wacunits.length -1];
+  //const wacunits = transactions.map(transaction => transaction.wacunits);
+ // const quantity = wacunits.length === 0 ? 0:wacunits[wacunits.length -1];
 
  //const wacPrices = transactions.map(transaction => transaction.wacuprice);
   // const unitPrice = wacPrices.length === 0 ? 0:wacPrices[wacPrices.length -1];
@@ -22,11 +22,12 @@ export const FinalBalance = () => {
 
   const [demand, setDemand] = React.useState("");
   const [holding_cost, setHoldingCost] = React.useState("");
+  const [order_cost, setOrderCost] = React.useState("");
 
-
+ 
   const onSubmit = e => {
     e.preventDefault();
-    eoq = Math.sqrt((2*demand*quantity)/holding_cost);
+    eoq = Math.sqrt((2*demand*order_cost)/holding_cost);
     document.getElementById("eoq").innerText = eoq;
   
   }
@@ -38,6 +39,7 @@ export const FinalBalance = () => {
 <form onSubmit={onSubmit}>
         <input type="number" step="0.001" name="demand" placeholder="Please enter Demand" value={demand} onChange={e => setDemand(e.target.value)}/>
         <input type="number" step="0.001" name="holding_cost"placeholder="Please enter Holding Cost" value={holding_cost} onChange={e => setHoldingCost(e.target.value)} />
+        <input type="number" step="0.001" name="holding_cost"placeholder="Please enter Order Cost" value={order_cost} onChange={e => setOrderCost(e.target.value)} />
         <button className="btn">Calculate</button>
   </form>
 
