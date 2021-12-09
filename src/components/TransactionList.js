@@ -18,7 +18,7 @@ export const TransactionList = () => {
       <ul className="list">
       <li>
           <span><span style={{color:'#2ecc71',marginRight:'8px'}}>&#9632;</span>Purchased</span>
-          <span><span style={{color:'#2ecc71',marginRight:'8px'}}>&#9632;</span>Purchased</span>
+          <span><span style={{color:'#c0392b',marginRight:'8px',marginLeft:'20px'}}>&#9632;</span>Issued</span>
           <span></span>
           <span></span>
           <span></span>
