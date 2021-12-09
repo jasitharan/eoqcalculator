@@ -73,7 +73,7 @@ export const AddTransaction = () => {
           <input type="radio" id="radioPurchase" name="type" value={type} onClick={() => {setType('add'); }} />
           <label htmlFor="radioPurchase">Purchase</label>
           <input type="radio" id="radioSell" name="type" value={type} onClick={() => setType('sub')} />
-          <label htmlFor="radioSell">Used</label>
+          <label htmlFor="radioSell">Sell</label>
           <input type="radio" id="radioBalance" name="type" value={type} onClick={() => setType('add')} />
           <label htmlFor="radioBalance">Balance</label> 
         </div>

@@ -12,7 +12,7 @@ export const Transaction = ({ transaction }) => {
       <span>{numberWithCommas(transaction.uprice)}</span>
       <span>{numberWithCommas(Math.abs(transaction.value))}</span>
       <span>{numberWithCommas(transaction.wacunits)}</span>
-      {/* <span>{numberWithCommas(transaction.wacuprice)}</span> */}
+      <span>{numberWithCommas(transaction.wacuprice)}</span>
       <span>{numberWithCommas(transaction.wacvalue)}</span>
       <button onClick={() => deleteTransaction(transaction._id)} className="delete-btn">x</button>
     </li>
