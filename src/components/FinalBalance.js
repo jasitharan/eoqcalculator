@@ -38,7 +38,7 @@ export const FinalBalance = () => {
 <form onSubmit={onSubmit}>
         <input type="number" step="0.001" name="demand" placeholder="Please enter Demand" value={demand} onChange={e => setDemand(e.target.value)}/>
         <input type="number" step="0.001" name="holding_cost"placeholder="Please enter Holding Cost" value={holding_cost} onChange={e => setHoldingCost(e.target.value)} />
-        <input type="number" step="0.001" name="holding_cost"placeholder="Please enter Order Cost" value={order_cost} onChange={e => setOrderCost(e.target.value)} />
+        <input type="number" step="0.001" name="order_cost"placeholder="Please enter Order Cost" value={order_cost} onChange={e => setOrderCost(e.target.value)} />
         <button className="btn">Calculate</button>
   </form>
 
