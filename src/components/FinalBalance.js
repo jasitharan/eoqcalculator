@@ -29,7 +29,6 @@ export const FinalBalance = () => {
     e.preventDefault();
     eoq = Math.sqrt((2*demand*order_cost)/holding_cost);
     document.getElementById("eoq").innerText = eoq;
-  
   }
 
 
