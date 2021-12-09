@@ -72,10 +72,10 @@ export const GlobalProvider = ({ children }) => {
       });
 
     } catch (err) {
-      dispatch({
-        type: 'TRANSACTION_ERROR',
-        payload: err.response.data.error
-      });
+      // dispatch({
+      //   type: 'TRANSACTION_ERROR',
+      //   payload: err.response.data.error
+      // });
     }
   }
 
